@@ -41,6 +41,15 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
+        .absolute-element {
+            left: 0; /* 确保不从左侧溢出 */
+            right: 0;
+        }
+        .fixed-width {
+            width: 100%;
+            max-width: 100vw; /* 使用视口宽度单位 */
+            box-sizing: border-box; /* 包含padding和border */
+        }
         .container {
             width: 100%;
             max-width: 100%;
