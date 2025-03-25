@@ -31,7 +31,8 @@
             padding: 0;
             width: 100%;
             max-width: 100%;
-            overflow-x: auto;
+            overflow-x: hidden;
+            position: relative; /* 为绝对定位元素建立相对参照 */
             min-height: 100vh;
             overflow-y: auto;
             display: flex;
@@ -39,6 +40,12 @@
             align-items: center;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding-left: env(safe-area-inset-left); /* 考虑刘海屏安全区域 */
+            padding-right: env(safe-area-inset-right);
         }
         .content {
             text-align: center;
